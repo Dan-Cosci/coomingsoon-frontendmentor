@@ -1,0 +1,100 @@
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    
+    background-image: 
+    url("/public/images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    
+
+    &__image-container{
+        height: 100%;
+        width: 50%;
+        img{
+            content: url("../images/hero-desktop.jpg");
+            object-fit:cover;
+            height: 100%;
+            // width: 100%;
+            display: block;
+        }
+
+    }
+
+    &__logo-container{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    &__text-container{
+        margin: 4rem 10%;
+
+        img {
+            margin-bottom: 30%;
+        }
+
+        h1{
+            font-weight: 400;
+            .muted{
+                color: $primary-color;
+                font-weight: 300;
+            }
+
+            color: $neutral-color;
+            font-size: 4rem;
+            letter-spacing: 1rem;
+
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        &__sub-text{
+            width: 75%;
+            line-height: 1.7;
+            color: $primary-color;
+            margin-bottom: 1.2rem;
+        }
+
+        &__input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input{
+                border: solid 1px $primary-color;
+                border-radius: 2rem;
+                padding: 1rem 2rem;
+                width: 75%;
+                height: 3rem;
+            }
+
+            button{
+                position: relative;
+                right: 50px;
+                border-radius: 2rem;
+                padding: 0 2.5rem;
+                height: 3rem;
+                background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+                color: white;
+                border: none;
+
+                display: flex;          // enable flex inside the button
+                align-items: center;    // vertically center text/icon
+                justify-content: center; // horizontally center text/icon
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(1.5);
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+                }
+                box-shadow: 0 10px 20px rgba(248, 190, 190, 0.5);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

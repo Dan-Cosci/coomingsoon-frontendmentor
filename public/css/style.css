@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans";
+  min-height: 100vh;
+  width: 100%;
+  background-color: linear-gradient(hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url("/public/images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.main__image-container {
+  height: 100%;
+  width: 50%;
+}
+.main__image-container img {
+  content: url("../images/hero-desktop.jpg");
+  object-fit: cover;
+  height: 100%;
+  display: block;
+}
+.main__logo-container {
+  visibility: hidden;
+  position: absolute;
+}
+.main__text-container {
+  margin: 4rem 10%;
+}
+.main__text-container img {
+  margin-bottom: 30%;
+}
+.main__text-container h1 {
+  font-weight: 400;
+}
+.main__text-container h1 .muted {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.main__text-container h1 {
+  color: hsl(0, 6%, 24%);
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.main__text-container__sub-text {
+  width: 75%;
+  line-height: 1.7;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 1.2rem;
+}
+.main__text-container__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main__text-container__input input {
+  border: solid 1px hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: 75%;
+  height: 3rem;
+}
+.main__text-container__input button {
+  position: relative;
+  right: 50px;
+  border-radius: 2rem;
+  padding: 0 2.5rem;
+  height: 3rem;
+  background-image: linear-gradient(135deg, hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main__text-container__input button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.main__text-container__input button {
+  box-shadow: 0 10px 20px rgba(248, 190, 190, 0.5);
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
