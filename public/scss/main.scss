@@ -1,2 +1,8 @@
 @import "config";
-@import "hero";
+
+@media screen and (min-width:$mobile-size) {
+    @import "hero";
+}
+@media screen and (max-width:$mobile-size){
+    @import "hero-mobile";
+}

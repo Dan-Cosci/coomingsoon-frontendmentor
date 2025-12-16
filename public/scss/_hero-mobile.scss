@@ -1,42 +1,50 @@
 .main{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 100vh;
+    padding-bottom: 3rem;
     
     background-image: 
     url("/public/images/bg-pattern-desktop.svg");
     background-size: cover;
     background-blend-mode: overlay;
 
+    &__logo-container{
+        padding: 1rem;
+        margin: 1rem .4rem;
+        align-self:flex-start;
+        img{
+            width: 70%;
+        }
+    }
+
     &__image-container{
         height: 100%;
-        width: 50%;
+        width: 100%;
         img{
-            content: url("../images/hero-desktop.jpg");
+            content: url("../images/hero-mobile.jpg");
             object-fit:cover;
             height: 100%;
-            // width: 100%;
+            width: 100%;
             display: block;
         }
 
     }
 
-    &__logo-container{
-        visibility: hidden;
-        position: absolute;
-    }
 
     &__text-container{
         margin: 4rem 10%;
+        text-align: center;
 
         img {
-            margin-bottom: 30%;
+            visibility: hidden;
+            position:absolute;
         }
 
         h1{
-            font-weight: 400;
+            font-weight: 600;
             .muted{
                 color: $primary-color;
                 font-weight: 300;
@@ -51,29 +59,30 @@
         }
 
         &__sub-text{
-            width: 75%;
             line-height: 1.7;
             color: $primary-color;
             margin-bottom: 1.2rem;
         }
 
         &__input{
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
 
             input{
+                width: 100%;
                 border: solid 1px $primary-color;
                 border-radius: 2rem;
                 padding: 1rem 2rem;
-                width: 75%;
                 height: 3rem;
             }
 
             button{
                 position: relative;
-                right: 75px;
                 border-radius: 2rem;
+                margin-left: -80px;
                 padding: 0 2.5rem;
                 height: 3rem;
                 background-image: linear-gradient(135deg, $primary-color, $secondary-color);
