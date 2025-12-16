@@ -26,13 +26,9 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
-
-!
-
 ### Links
 
-- Solution URL: Add solution URL here
+- Solution URL: [solution](https://dan-cosci.github.io/coomingsoon-frontendmentor/)
 - Live Site URL: Add live site URL here
 
 ## My process
